@@ -1,0 +1,90 @@
+:root { /*Declaração de variaveis*/
+  --red: #E50914;
+  --black: #141414;
+}
+
+* { /*Reset CSS*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos base*/
+body {
+  background-color: var(--black);
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+header .container {
+  padding: 0 40px;
+  display: flex; /*Coloca tudo em linha*/
+  flex-direction: row; /*Por padrão essa propriedade vem como "row". Mesmo se não especificasse aqui, ficaria assim*/
+  align-items: center; /*Para alinhar todos os itens desse container*/
+  justify-content: space-between;
+}
+
+header .logo-netflix {
+  color: var(--red);
+  font-family: 'Netflix Sans', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+}
+
+header nav a {
+  text-decoration-line: none;
+  color: #AAA;
+  margin-right: 10px;
+  
+}
+
+header nav a:hover{ /* :hover seletor é usado para mudar as configurações de elementos quando você passa o mouse sobre eles. */
+  color: #fff;
+}
+
+main {
+  color: white;
+}
+
+/*CSS filme principal*/
+main .main-movie {
+  font-size: 12px;
+  background: linear-gradient(rgba(0,0,0.20), rgba(0,0,0,.20)100%), url("../img/capa-hotel-transilvania-3.jpg");
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex; /*Só quem herda o display flex são as filhas direta dessa div, a partir do momento que declaramos outra div e que não é uma filha direta, vem com display: block*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .main-movie .movie-title{
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+main .main-movie .movie-description {
+  margin-top: 1.5%;
+  margin-bottom: 40px;
+}
+
+.button-wacth, .button-info {
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+
+  padding: 10px;
+  margin-right: 8px;
+
+  cursor: pointer;
+}
+
+.buttons-main-movie .button-wacth {
+  text-shadow: 2px 2px 4px rgb(0,0,0,.45);
+}
+
+.buttons-main-movie .button-info {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
