@@ -27,7 +27,7 @@ header .container {
 header .logo-netflix {
   color: var(--red);
   font-family: 'Netflix Sans', Helvetica, Arial, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 header nav a {
