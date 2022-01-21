@@ -108,8 +108,20 @@ main .main-movie .movie-description {
 }
 
 /*Carrosel*/
+.carousel-movies {
+  margin-top: 1%;
+}
+
+.carousel-movies .carousel-movies-title {
+  color: white;
+}
+
 .box-movie {
   height: 100%;
   width: 100%;
   display: block;
+}
+
+.carousel-series .carousel-series-title {
+  color: white;
 }
