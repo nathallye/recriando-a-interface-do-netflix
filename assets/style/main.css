@@ -106,3 +106,10 @@ main .main-movie .movie-description {
 .buttons-main-movie i {
   margin-right: 5px;
 }
+
+/*Carrosel*/
+.box-movie {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
