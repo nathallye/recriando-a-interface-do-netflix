@@ -16,11 +16,12 @@ body {
 }
 
 header .container {
-  padding: 0 40px;
+  padding: 0 2.5%;
   display: flex; /*Coloca tudo em linha*/
   flex-direction: row; /*Por padrão essa propriedade vem como "row". Mesmo se não especificasse aqui, ficaria assim*/
   align-items: center; /*Para alinhar todos os itens desse container*/
   justify-content: space-between;
+  
 }
 
 header .logo-netflix {
@@ -45,9 +46,13 @@ main {
 }
 
 /*CSS filme principal*/
+main .container {
+  margin: 0 60% 0 2.5%; /*Topo/direita/infeior/esquerda*/
+}
+
 main .main-movie {
   font-size: 12px;
-  background: linear-gradient(rgba(0,0,0.20), rgba(0,0,0,.20)100%), url("../img/capa-hotel-transilvania-3.jpg");
+  background: linear-gradient(rgba(0,0,30), rgba(0,0,0,.20)100%), url("../img/capa-hotel-transilvania-3.jpg");
 
   height: 400px;
   background-size: cover;
@@ -60,10 +65,11 @@ main .main-movie {
 
 main .main-movie .movie-title{
   margin-top: 10%;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 main .main-movie .movie-description {
+  line-height: normal;
   margin-top: 1.5%;
   margin-bottom: 40px;
 }
@@ -77,6 +83,7 @@ main .main-movie .movie-description {
   margin-right: 8px;
 
   cursor: pointer;
+  transition: .3s ease all;
 }
 
 .buttons-main-movie .button-wacth {
@@ -84,7 +91,18 @@ main .main-movie .movie-description {
 }
 
 .buttons-main-movie .button-info {
-  background-color: rgba(109, 109, 110, 0.7);
+  background-color: rgba(109, 109, 110, .70);
   color: white;
 }
 
+.button-wacth:hover {
+  background-color: rgb(172, 169, 169, 0.85);
+}
+
+.button-info:hover {
+  background-color: rgb(88, 88, 88, .50);
+}
+
+.buttons-main-movie i {
+  margin-right: 5px;
+}
